@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/discogs/(.*)", "destination": "/api/discogs" }
+  ]
+}
