@@ -1,33 +1,43 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --bg: #0e0d0c;
-  --bg2: #161513;
-  --bg3: #1e1c19;
-  --bg4: #252320;
-  --surface: #2a2824;
-  --border: rgba(255,255,255,0.07);
-  --border2: rgba(255,255,255,0.12);
-  --text: #f0ece4;
-  --text2: #9e9a92;
-  --text3: #5c5952;
-  --accent: #e8b86d;
-  --accent2: #c49a4e;
-  --accent-bg: rgba(232,184,109,0.1);
-  --red: #e06c6c;
-  --green: #6cbf8e;
-  --radius: 10px;
-  --radius-lg: 16px;
-  font-family: 'DM Sans', sans-serif;
+  /* --- FONDS (AMBIANCE SABLE CHAUD / CRÈME) --- */
+  --bg:          #F9F6F0;  /* Fond principal : Blanc-crème doux */
+  --bg2:         #F0EAE1;  /* Fond secondaire : Header, sidebar, footer */
+  --bg3:         #E5DCD0;  /* Variante intermédiaire */
+  --surface:     #FFFFFF;  /* Surface des cartes : Blanc pur pour le relief */
+  --bg4:         #DACFBF;  /* État Hover (survol) des boutons secondaires */
+
+  /* --- BORDURES & SÉPARATEURS --- */
+  --border:      rgba(40, 40, 40, 0.08);
+  --border2:     #2B2B2B;                 
+
+  /* --- TEXTES (ANTHRACITE / CHARCOAL) --- */
+  --text:        #1A1A1A;  /* Texte principal (Titres) */
+  --text2:       #4A4A4A;  /* Texte secondaire (Paragraphes) */
+  --text3:       #757575;  /* Labels, placeholders */
+
+  /* --- ACCENT (LE NOUVEAU BLEU ÉLECTRIQUE - IMPOSSIBLE À RATER) --- */
+  /* Cette couleur fait "popper" tes boutons immédiatement sur le fond clair */
+  --accent:      #c2a359;  /* Bleu Royal Électrique : Ultra-visible et dynamique */
+  --accent2:     #988542;  /* Bleu plus foncé pour l'effet de survol (Hover) du bouton */
+  --accent-bg:   rgba(29, 78, 216, 0.08); /* Fond de badge ou bouton tertiaire */
+
+  /* --- STATUTS --- */
+  --red:         #C0392B;  
+  --green:       #27AE60;  
+
+  /* --- STRUCTURE --- */
+  --radius:      8px;
+  --radius-lg:   14px;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
-
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 2px; }
